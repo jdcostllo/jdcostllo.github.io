@@ -1,49 +1,32 @@
 <html>
+
 	<head>
-		<title>notions</title>
+		<title>Jeffrey Costello</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
 		<!-- <script src="node_modules\jquery\dist\jquery.min.js"></script> -->
 
+		<!-- Import Bootstrap from their reccomended CDN (as of March 21, 2024). Link below. -->
 		<!-- https://getbootstrap.com/docs/5.0/getting-started/download/ -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		
-		<link rel="stylesheet" href="main.css">		
+
+		<link rel="stylesheet" href="jdcostllo.css">		
 	</head>
+
 	<body class="text-white">
 		<div id="outer" class="container-fluid col w-100 h-100" style="background-color:#3B4252; background-image:radial-gradient(farthest-corner at 50% 95%,#3B4252,#4C566A);"> 
 				<div class="row justify-content-center h-100">
+
 					<div class="container-fluid row w-100 align-items-center m-0 p-1" style="height:35px;">
 						<div id="superStepLogo" class="col-2 border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">notions</h6>
+							<label class="btn btn-default m-0 p-0 text-white">
+								<h3 class="m-0 p-0">Jeffrey Costello</h6>
 							</label>
 						</div>
 							<!-- Hex Color #D08770 -->
-						<div class="susClickable col-1 border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">Import</h6><input type="file" id="file-selector" accept=".notion" hidden>
-							</label>
-						</div>
-						<div class="susClickable col-1 border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">Edit</h6>
-							</label>
-						</div>
-						<div class="susClickable col-1 border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">Export</h6>
-							</label>
-						</div>
-						<div class="susClickable col-1 border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">Help</h6>
-							</label>
-						</div>
-					</div>
-					<div class="container-fluid row w-100 align-items-center m-0 p-1" style="height:35px;position:fixed;top:35;">
+
 						<div id="sketchButton" class="col-1 border border-dark rounded d-inline-block text-truncate m-1">
 							<label class="ssLabel btn btn-default m-0 p-0 text-white">
 								<h6 class="m-0 p-0">Mitochondria</h6>
@@ -70,41 +53,8 @@
 							</label>
 						</div>
 					</div>
-					<div class="container-fluid row w-100 align-items-center m-0 p-1" style="height:100px;position:fixed;top:70;">
-						<div id="dnaViewport" class="col border border-dark rounded-top d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">Notions Viewport</h6>
-							</label>
-						</div>
-						<!-- <div id="zoomIn" class="susClickable col-1 border border-dark rounded-top d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">zoomIn</h6>
-							</label>
-						</div>
-						<div id="zoomOut" class="susClickable col-1 border border-dark rounded-top d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">zoomOut</h6>
-							</label>
-						</div> -->
-					</div>
-					<div class="container-fluid row w-100 align-items-center m-0 p-1" style="height:35px;position:fixed;top:170;">
-						<div id="dnaNavigation" class="susClickable col border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">Navigation</h6>
-							</label>
-						</div>
-						<!-- <div id="panLeft" class="susClickable col-1 border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">panLeft</h6>
-							</label>
-						</div>
-						<div id="panRight" class="susClickable col-1 border border-dark rounded-bottom d-inline-block text-truncate m-1">
-							<label class="ssLabel btn btn-default m-0 p-0 text-white">
-								<h6 class="m-0 p-0">panRight</h6>
-							</label>
-						</div> -->
-					</div>
-					<div class="container-fluid row w-100 align-items-center m-0 p-1" style="position:fixed;top:205;bottom:40px;">
+
+					<div class="container-fluid row w-100 align-items-center m-0 p-1">
 						<div class="col-1 border border-dark rounded d-inline-block text-truncate h-100 m-1" style="background-color:#2E3440;">
 							<h4 class="p-1">Revision</h4>
 							<p class="p-1">Git Revision 3.4.1</p>
