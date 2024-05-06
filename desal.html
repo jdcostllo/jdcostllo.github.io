@@ -17,13 +17,23 @@
 
     <body, style="padding: 20px;">
 
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-2">
-                    <a href="portfolio.html">Back to Portfolio</a>
-                </div>
+       <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="portfolio.html">Go Back to My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>  
+                <a class="nav-link" href="about.html">About Me</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="contact.html">Contact / Resume</a>
             </div>
         </div>
+        </div>
+    </nav>
 
         <div class="container" style="padding-top: 50px;">
             <div class="row align-items-center">
@@ -44,10 +54,10 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
                 <h2>Israel, Spring 2018</h2>
-                <div class="col-5">
-                <img src="StaticImages\Desal\Desal_Headshot.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_Headshot.jpg" alt="Desalination">
                 </div>
-                <div class="col-7">
+                <div class="col portfolio-text" style="min-width: 400px;">
 
                 <p>
                     I never could have predicted the magnitude of the challenges I would face on this trip nor could I predict how critically important this trip was to my career and my attitude toward engineering. 
@@ -63,19 +73,19 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
 
-                <div class="col-4">
+                <div class="col portfolio-text">
 
                     <p>
                         Success was my only option. For fear of being stuck any longer, I quickly learned a host of new skills to expedite the process and fix this broken, broken system. I spent hours in the stinking fumes of solder and PVC cement as I rewired the entire control cabinet and repaired the fault hydraulics. From this experience, I developed a newfound confidence designing relay logic, using a multimeter, soldering, assembling PVC hydraulics, and debugging electronics in the harshest conditions.
                     </p>
                 </div>
 
-                <div class="col-4">
-                    <img src="StaticImages\Desal\Desal_CabinetBad.jpg" alt="Desalination" style="width:400px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_CabinetBad.jpg" alt="Desalination">
                 </div>
 
-                <div class="col-4">
-                    <img src="StaticImages\Desal\Desal_CabinetGood.jpg" alt="Desalination" style="width:400px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_CabinetGood.jpg" alt="Desalination">
                 </div>
 
 
@@ -85,11 +95,11 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
 
-                <div class="col-5 justify-content-center">
-                    <img src="StaticImages\Desal\Desal_RibbonCutting.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_RibbonCutting.jpg" alt="Desalination">
                 </div>
 
-                <div class="col-7">
+                <div class="col portfolio-text">
 
                     <p>
                         Ultimately, the system was repaired, packed tight, and shipped just one month after the original date. I returned to Cambridge shaken and tired, but not broken.I had a new goal: as long as I worked at the GEAR Lab, we would not let our industry partners blindly design our pilot systems. They would be ours, from conception to commissioning.
@@ -115,10 +125,10 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
                 <h2>New Mexico, Summer 2018</h2>
-                <div class="col-5">
-                <img src="StaticImages\Desal\Desal_Controls.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Desal\Desal_Controls.jpg" alt="Desalination">
                 </div>
-                <div class="col-7">
+                <div class="col portfolio-text">
 
                 <p>
                     Work began quickly to develop the next generation GEAR Lab desalination pilot. It was born from the idea that electrodialysis desalination, an area of focus in the GEAR Lab, was uniquely well equipped for renewable power. This pilot would closely track the irradiance curve from a solar power system, operating slow in the morning and evening when the sun was low and operating fast when the sun was at its peak.    
@@ -134,15 +144,15 @@
 
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
-                <div class="col-7">
+                <div class="col portfolio-text">
 
                     <p>
                         Ultimately, the system was repaired, packed tight, and shipped just one month after the original date. I returned to Cambridge shaken and tired, but not broken.I had a new goal: as long as I worked at the GEAR Lab, we would not let our industry partners blindly design our pilot systems. They would be ours, from conception to commissioning.
                     </p>
                 </div>
 
-                <div class="col-5 justify-content-center">
-                    <img src="StaticImages\Desal\Desal_HighVoltage.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_HighVoltage.jpg" alt="Desalination">
                 </div>
             </div>
         </div>
@@ -151,10 +161,10 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
 
-                <div class="col-5 justify-content-center">
-                    <img src="StaticImages\Desal\Desal_Trailer.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_Trailer.jpg" alt="Desalination">
                 </div>
-                <div class="col-7">
+                <div class="col portfolio-text">
                     <p>
                         While this system was ultimately successful, I felt a sense of regret and a lot of hindsight. 
                     </p>
@@ -177,10 +187,10 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
                 <h2>New Mexico, Fall 2018</h2>
-                <div class="col-5">
-                <img src="StaticImages\Desal\Desal_PowerCabinet.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Desal\Desal_PowerCabinet.jpg" alt="Desalination">
                 </div>
-                <div class="col-7">
+                <div class="col portfolio-text">
 
                 <p>
                     Work hadn't wrapped on the summer pilot system before the next pilot was already underway. This system would be a special showcase of our technology preempting a demonstration in India, where our industry sponsor was located.
@@ -196,15 +206,15 @@
 
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
-                <div class="col-7">
+                <div class="col portfolio-text">
 
                     <p>
                         We still had unanswered questions about the final hydraulic configuration of this system, so meticulously modeled every hose, fittings, and tube in CAD to ensure every possible hydraulic connection was possible. A simple flip of a valve or two easily managed this flexibility.
                     </p>
                 </div>
 
-                <div class="col-5 justify-content-center">
-                    <img src="StaticImages\Desal\Desal_Skid.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_Skid.jpg" alt="Desalination">
                 </div>
             </div>
         </div>
@@ -213,10 +223,10 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
 
-                <div class="col-5 justify-content-center">
-                    <img src="StaticImages\Desal\Desal_Fall2018.jpg" alt="Desalination" style="width:500px;">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_Fall2018.jpg" alt="Desalination">
                 </div>
-                <div class="col-7">
+                <div class="col portfolio-text">
                     <p>
                         Upon completing the system, I remained in New Mexico for two months, testing every aspect of the system and troubleshooting every hardware and software bug. Myself, and the rest of the team, took every lesson to heart in preparation for our next design.
                     </p>
@@ -230,10 +240,10 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
                 <h2>India, Winter 2018</h2>
-                <div class="col-5">
-                <img src="StaticImages\Desal\Desal_FirstIteration.jpg" alt="Desalination" style="width:500px;">
+                <div class="col">
+                <img class="portfolio-pic" src="StaticImages\Desal\Desal_FirstIteration.jpg" alt="Desalination">
                 </div>
-                <div class="col-7">
+                <div class="col portfolio-text">
 
                 <p>
                     After three and a half months in New Mexico, the team resolved to not send me to India for the next pilot. I was relieved, but that did not stop my commitment to the success of the next pilot: a commercial prototype in Medchal, India.
@@ -249,15 +259,15 @@
 
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
-                <div class="col-7">
+                <div class="col portfolio-text">
 
                     <p>
                         By December 13th, I had completely re-engineered the design of this system three times, considering the feedback from the engineering team in India. This design met specific size constraints and considered the mobility of each welded steel structure. As always, every nut and bolt was modeled ensuring that even the smallest details were scrutinized.
                     </p>
                 </div>
 
-                <div class="col-5 justify-content-center">
-                    <img src="StaticImages\Desal\Desal_FinalIteration.PNG" alt="Desalination" style="width:500px;">
+                <div class="col justify-content-center">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_FinalIteration.PNG" alt="Desalination">
                 </div>
             </div>
         </div>
@@ -266,10 +276,10 @@
         <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
             <div class="row align-items-center">
 
-                <div class="col-5 justify-content-center">
-                    <img src="StaticImages\Desal\Desal_RealSystem.jpg" alt="Desalination" style="width:500px;">
+                <div class="col justify-content-center">
+                    <img class="portfolio-pic" src="StaticImages\Desal\Desal_RealSystem.jpg" alt="Desalination">
                 </div>
-                <div class="col-7">
+                <div class="col portfolio-text">
                     <p>
                         Just a few late nights later, the system was built in its entirety. Our sponsor was thoroughly impressed. 
                     </p>
@@ -301,14 +311,6 @@
 
 
 
-
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <a href="portfolio.html">Back to Portfolio</a>
-                </div>
-            </div>
-        </div>
           
         
     </body>

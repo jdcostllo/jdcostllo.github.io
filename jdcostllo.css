@@ -4,6 +4,17 @@ a {
   color:#2E3440
 }
 
-.col-pic {
-  align: center
+.pic-col {
+  text-align: center;
+}
+
+.portfolio-pic {
+  justify-content: center;
+  min-width: 300px;
+  width: 75%;
+  box-shadow: 2px 2px 4px #000000;;
+}
+
+.porfolio-text {
+  min-width: 300px;
 }
