@@ -17,31 +17,32 @@
 
     <body, style="padding: 20px;">
 
-        <div class="container">
-            <div class="row align-items-center">
-              <div class="col-4">
-              </div>
-              <div class="col-2">
-                <a href="index.html" >Jeffrey Costello</a>
-              </div>
-              <div class="col-2">
-                <a href="about.html" >About Me</a>
-              </div>
-              <div class="col-2">
-                <a href="portfolio.html">Portfolio</a>
-              </div>
-              <div class="col-2">
-                <a href="contact.html">Contact / Resume</a>
-              </div>
-        </div>
+          <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jeffrey Costello</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- <a class="nav-link" href="index.html">Home</a>   -->
+                    <a class="nav-link" href="index.html">Home</a>  
+                    <a class="nav-link" href="about.html">About Me</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="contact.html">Contact / Resume</a>
+                </div>
+            </div>
+            </div>
+        </nav>
 
         <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
         <div class="container" style="padding-top: 50px;">
             <div class="row align-items-center">
-                <div class="col-5">
-                <img src="StaticImages\contact_Headshot.png" alt="Jeffrey Costello" style="width:400px;">
+                <div class="col" align="center">
+                <img src="StaticImages\contact_Headshot.png" alt="Jeffrey Costello" style="width:60%; min-width:400px;">
                 </div>
-                <div class="col-7">
+                <div class="col">
 
                 <h1>Contact Me</h1>
 
