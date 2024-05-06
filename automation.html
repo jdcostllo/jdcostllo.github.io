@@ -1,0 +1,134 @@
+<html>
+
+	<head>
+		<title>Jeffrey Costello</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=500, initial-scale=1">
+		<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+		<!-- <script src="node_modules\jquery\dist\jquery.min.js"></script> -->
+
+		<!-- Import Bootstrap from their reccomended CDN (as of March 21, 2024). Link below. -->
+		<!-- https://getbootstrap.com/docs/5.0/getting-started/download/ -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="jdcostllo.css">		
+	</head>
+
+    <body, style="padding: 20px;">
+
+       <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="portfolio.html">Go Back to My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>  
+                <a class="nav-link" href="about.html">About Me</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="contact.html">Contact / Resume</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+        <div class="container" style="padding-top: 50px;">
+            <div class="row align-items-center">
+
+                <h1>Teaching Principles of Automated Manufacturing</h1>
+                <h3>Developing custom industrial automation software to teach university students.</h 3>
+
+            </div>
+        </div>
+
+
+
+        <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+            <div class="row align-items-center">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages/Automation/Automation_ADML.jpg" alt="Automation">
+                </div>
+                <div class="col portfolio-text" style="min-width: 400px;">
+
+                <p>
+                    My return to Boston University was interesting. I wasn’t sure exactly how I’d feel as a staff member compared to when I was a student. I’d be a technical instructor, especially for the course ME345 Automation and Manufacturing Methods. I was shocked to find how little had changed since I took the course as an undergraduate student in 2016.
+                </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+            <div class="row align-items-center">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages/Automation/Automation_Rosie.jpg" alt="Automation">
+                </div>
+                <div class="col portfolio-text" style="min-width: 400px;">
+
+                <p>
+                    The system consisted of Teledyne-Dalsa vision systems, Haas CNC machines, an old Rockwell PLC, and three middle-aged Universal Robots UR5s. I was expected to know each of these systems intimately and debug them constantly for the 28 students who entered this space each semester.
+                </p>
+
+                <p>
+                    I never expected that I would completely reimagine the automation software. Originally it was a crummy attempt by an external contractor built in LabView.  Then, when COVID unexpectedly swept the world, I took it upon myself to stay active.
+                </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+            <div class="row align-items-center">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages/Automation/Automation_Schematic.png" alt="Automation">
+                </div>
+                <div class="col portfolio-text" style="min-width: 400px;">
+
+                <p>
+                    I began with Python, trying to understand all of the API calls for the different machines in the lab. I would go into the lab and test individual scripts and machine behaviors. I quickly got familiar with web sockets, SSH, file servers, CAN, RS485, and dozens of other interfaces I needed to test, debug, and control the system.
+                </p>
+
+                <p>
+                    Simultaneously, I was conceptualizing a control scheme where multiple “processes” could simultaneously share the limited resources in the lab, seizing and releasing each resource to slowly inch through its unique manufacturing process. Later, I realized that I had unintentionally stumbled onto queue theory.
+                </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+            <div class="row align-items-center">
+
+                <div class="col portfolio-text" style="min-width: 400px;">
+
+                <p>
+                    Within a semester, this project exploded from a single Python script into a full-blown web application with multiple user interfaces, each showcasing a different aspect of automation. The software collected execution times and other data for students to process. Eventually, I even hired and managed two brilliant computer engineering students to further improve the software and give it a polish.
+                </p>
+
+                <p>
+                    It is challenging to express the number of lessons learned as part of this work. I have a newfound appreciation for the challenges of attaining reliable automation, both in hardware and software. I am relieved to hear the software is still running today, with the occasional bug fix.
+                </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+            <div class="row align-items-center">
+                <div class="col pic-col">
+                    <img class="portfolio-pic" src="StaticImages/Automation/Automation_BUMES.jpg" alt="Automation">
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+
+                  
+        
+    </body>
+</html>
