@@ -44,7 +44,11 @@
         <div class="row align-items-center">
 
             <h1>Teaching Principles of Automated Manufacturing</h1>
-            <h3>Developing custom industrial automation software to teach university students.</h 3>
+            <h3>Developing custom industrial automation software to teach university students.</h3>
+
+            <p>This work was completed during my employement at Boston University as a <b>Laboratroy Supervisor</b> at
+                the <a href="https://www.bu.edu/epic/">Engineering Product Innovation Center (EPIC)</a>, located at 750
+                Commonwealth Avenue in Boston, MA.</p>
 
         </div>
     </div>
@@ -58,12 +62,16 @@
             </div>
             <div class="col portfolio-text" style="min-width: 400px;">
 
-                <p>
-                    My return to Boston University was interesting. I wasn’t sure exactly how I’d feel as a staff member
-                    compared to when I was a student. I’d be a technical instructor, especially for the course ME345
-                    Automation and Manufacturing Methods. I was shocked to find how little had changed since I took the
-                    course as an undergraduate student in 2016.
-                </p>
+                <p>In 2019, I returned to my alma mater, Boston University, as a staff member. I felt a bit odd at first
+                    - I wasn't sure exactly how
+                    I'd feel as a staff member compared to when I was a student. Now, I'd be a <b>technical
+                        instructor</b>,
+                    especially for the course ME345 Automation and Manufacturing Methods.</p>
+                <p>As I stepped into the Automated Design and Manufacturing Laboratory (ADML), I was shocked to find how
+                    little
+                    had changed since I took the
+                    course myself back in 2016.</p>
+
 
             </div>
         </div>
@@ -75,17 +83,35 @@
                 <img class="portfolio-pic" src="StaticImages/Automation/Automation_Rosie.jpg" alt="Automation">
             </div>
             <div class="col portfolio-text" style="min-width: 400px;">
-
-                <p>
-                    The system consisted of Teledyne-Dalsa vision systems, Haas CNC machines, an old Rockwell PLC, and
-                    three middle-aged Universal Robots UR5s. I was expected to know each of these systems intimately and
-                    debug them constantly for the 28 students who entered this space each semester.
+                <p>I was expected to know each of these systems intimately and
+                    debug them constantly for the <b>28 students</b> who entered this space <b>each semester</b>.
                 </p>
 
                 <p>
-                    I never expected that I would completely reimagine the automation software. Originally it was a
-                    crummy attempt by an external contractor built in LabView. Then, when COVID unexpectedly swept the
-                    world, I took it upon myself to stay active.
+                    The system consisted of...
+                <ul>
+                    <li>
+                        Three Teledyne-Dalsa vision systems
+                    </li>
+                    <li>
+                        Two Haas CNC machines
+                    </li>
+                    <li>
+                        A 1994 Rockwell PLC controlling a conveyor
+                    </li>
+                    <li>
+                        Three middle-aged Universal Robots UR5s
+                    </li>
+                </ul>
+                This mess of mismatched systems was controlled by custom automation software prepared in Labview from an
+                external contractor - same as it was in 2016. The code was riddled with bugs and never worked. I felt my
+                three-year-old frustation I felt as a student reignite as I stepped into my new instructor role.</p>
+
+                <p>
+                    Still, I never expected that <b>I would completely reimagine the automation software</b>. But when
+                    COVID unexpectedly swept the
+                    world, I found myself in an awkward position asking, "My job is almost entirely hands-on, in-person.
+                    How can I stay active?."
                 </p>
 
             </div>
@@ -96,22 +122,21 @@
     <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
         <div class="row align-items-center">
             <div class="col pic-col">
-                <img class="portfolio-pic" src="StaticImages/Automation/Automation_Schematic.png" alt="Automation">
+                <p>
+                    <img class="portfolio-pic" src="StaticImages/Automation/CodeSample.png" alt="Automation">
+                    <br><br>
+                    Code from the second-ever <b>Github</b> commit to this repository.
+                </p>
             </div>
             <div class="col portfolio-text" style="min-width: 400px;">
 
                 <p>
-                    I began with Python, trying to understand all of the API calls for the different machines in the
+                    I began working at home, hours on end, with Python, trying to understand all of the API calls for
+                    the different machines in the
                     lab. I would go into the lab and test individual scripts and machine behaviors. I quickly got
-                    familiar with web sockets, SSH, file servers, CAN, RS485, and dozens of other interfaces I needed to
+                    familiar with <b>web sockets, SSH, file servers, CAN, RS485</b>, and dozens of other interfaces I
+                    needed to
                     test, debug, and control the system.
-                </p>
-
-                <p>
-                    Simultaneously, I was conceptualizing a control scheme where multiple “processes” could
-                    simultaneously share the limited resources in the lab, seizing and releasing each resource to slowly
-                    inch through its unique manufacturing process. Later, I realized that I had unintentionally stumbled
-                    onto queue theory.
                 </p>
 
             </div>
@@ -120,25 +145,128 @@
 
     <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
         <div class="row align-items-center">
-
+            <div class="col pic-col">
+                <p>
+                    <img class="portfolio-pic" src="StaticImages/Automation/SampleLab.png" alt="Automation">
+                    <br><br>
+                    The first page from one of the <b>nine laboratory exercises</b> I wrote and conducted in the ADML.
+                </p>
+            </div>
             <div class="col portfolio-text" style="min-width: 400px;">
 
                 <p>
-                    Within a semester, this project exploded from a single Python script into a full-blown web
-                    application with multiple user interfaces, each showcasing a different aspect of automation. The
-                    software collected execution times and other data for students to process. Eventually, I even hired
-                    and managed two brilliant computer engineering students to further improve the software and give it
-                    a polish.
-                </p>
-
-                <p>
-                    It is challenging to express the number of lessons learned as part of this work. I have a newfound
-                    appreciation for the challenges of attaining reliable automation, both in hardware and software. I
-                    am relieved to hear the software is still running today, with the occasional bug fix.
+                    In reality, I had to be the <b>subject-matter-expert</b> for all things automation in the ADML -
+                    <b>hardware and software</b>. I wrote the labs! The advanved robotics lab covered each of the ways a
+                    Universal Robots UR5 could be manipulated without using the teach pendant including...
+                <ul>
+                    <li>
+                        UR Dashboard Server
+                    </li>
+                    <li>
+                        Websockets
+                    </li>
+                    <li>
+                        Modbus
+                    </li>
+                    <li>
+                        Secure File Transfer Protocol (SFTP)
+                    </li>
+                </ul>
                 </p>
 
             </div>
         </div>
+    </div>
+
+    <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+        <div class="row align-items-center">
+            <div class="col pic-col">
+                <p>
+                    <img class="portfolio-pic" src="StaticImages/Automation/Edie.jpg" alt="Automation">
+                </p>
+            </div>
+            <div class="col portfolio-text" style="min-width: 400px;">
+
+                <p>
+                    As I was writing small API and test scripts and rewriting all of the laboratroy exercises, I was
+                    still conceptualizing a control scheme where multiple <b>“processes” could
+                        simultaneously share the limited resources</b> in the lab, seizing and releasing each resource
+                    to slowly
+                    inch through its unique manufacturing process. Later, I realized that I had unintentionally stumbled
+                    onto <b>queue theory</b>.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+        <div class="row align-items-center">
+
+            <div class="col portfolio-text" style="min-width: 400px;">
+
+                <p>
+                    Within a semester, this project exploded from a single Python script into a full-blown <b>web
+                        application</b>. It was dubbed "BUMES," the <b>Boston University Manufacturing Execution
+                        Software</b>. There were multiple user interfaces, each showcasing a different aspect of
+                    automation, showcasing each of the laboratroy exercises. The
+                    software collected execution times and other data for students to process. Eventually, I even
+                    <b>hired
+                        and managed</b> two brilliant computer engineering students to further improve the software and
+                    give it
+                    a polish.
+                </p>
+
+                <p>
+                    See more of the BUMED interface by downloading an example lab manual:<br>
+                    <a href="StaticImages\Automation\CIM I.pdf" download>Computer Integrated Manufacturing I</a><br>
+                    <a href="StaticImages\Automation\CIM II.pdf" download>Computer Integrated Manufacturing II</a>
+                </p>
+                <p>
+                    It is incredibly challenging to express the number of lessons learned as part of this work. There
+                    were weeklong trials learning everything from how to write <b>loops in G-Code to debugging CAN
+                        networks
+                        to writing ASCII text commands</b> for the oldest PLC I've ever used. I have a newfound
+                    appreciation for the challenges of attaining reliable automation, both in hardware and software.
+                </p>
+
+                <p>As is inevtiable when embarking on these journeys, there is much that I would go back and redo.
+                    However, as of writing, I am pleased to hear <b>the software is still used today to teach
+                        students</b>. See more of my sidequests in the ADML on my <a href="other.html">Noteworthy
+                        Projects</a> page under the "Work" section. Or, continue scrolling here to view some videos.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
+        <div class="row align-items-center">
+            <div class="col pic-col">
+                <iframe width="75%" height="315" src="https://www.youtube.com/embed/svICPNDbjMg?si=evQGW1Au4LqRtnFK"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="col pic-col">
+                <iframe width="75%" height="315" src="https://www.youtube.com/embed/zU-w2IxJk7M?si=7Prhqxb9SXQqHuUk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="col pic-col">
+                <iframe width="75%" height="315" src="https://www.youtube.com/embed/8HAuV-QO-Os?si=vMe8FWKXIkxuZf8F"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+    </div>
     </div>
 
     <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
@@ -151,6 +279,11 @@
         </div>
     </div>
     </div>
+
+
+
+
+
 
 
 
