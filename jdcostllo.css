@@ -1,7 +1,7 @@
 /* color palette https://www.nordtheme.com/ */
 
-a { 
-  color:#2E3440
+a {
+  color: #2E3440
 }
 
 .pic-col {
@@ -12,7 +12,8 @@ a {
   justify-content: center;
   min-width: 300px;
   width: 75%;
-  box-shadow: 2px 2px 4px #000000;;
+  box-shadow: 2px 2px 4px #000000;
+  ;
 }
 
 .porfolio-text {
