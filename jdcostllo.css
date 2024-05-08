@@ -6,6 +6,7 @@ a {
 
 .pic-col {
   text-align: center;
+  padding: 5px;
 }
 
 .portfolio-pic {
@@ -17,5 +18,5 @@ a {
 }
 
 .porfolio-text {
-  min-width: 400px;
+  min-width: 300px;
 }
