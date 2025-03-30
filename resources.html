@@ -1,0 +1,2457 @@
+<html>
+
+<head>
+    <title>Jeffrey Costello</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <!-- <script src="node_modules\jquery\dist\jquery.min.js"></script> -->
+
+    <!-- Import Bootstrap from their reccomended CDN (as of March 21, 2024). Link below. -->
+    <!-- https://getbootstrap.com/docs/5.0/getting-started/download/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="jdcostllo.css">
+
+    <!-- https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file -->
+    <!-- https://releases.jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+        var includes = $('[data-include]')
+        $.each(includes, function () {
+            var file = './' + $(this).data('include') + '.html'
+            $(this).load(file)
+        })
+        })
+    </script>
+</head>
+
+<body>
+
+    <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div id="scrollspyHeadingNoteworthy" class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jeffrey Costello</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About Me</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="other.html">Noteworthy Projects</a>
+                    <a class="nav-link" href="contact.html">Contact / Resume</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- https://getbootstrap.com/docs/4.0/layout/grid/ -->
+    <div class="container" style="padding-top: 50px;">
+        <div class="row align-items-center">
+            <div class="col">
+
+                <h1>Technical Resources</h1>
+
+                <p>
+                    Over the years, I've aggregated a number of technical resources that I rely on every day. I'll
+                    slowly add them to this webpage for safekeeping!
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row porfolio-text">
+            <!-- <h3>Jump to Section:</h3> -->
+            <div class="col">
+                <h4 style="margin-left: 15px;"">
+                <a href=" #scrollspyHeading1">Imperial Drill and Tap Chart</a>
+                </h4>
+            </div>
+            <div class="col">
+                <h4 style="margin-left: 15px;"">
+                <a href=" #scrollspyHeading2">Other Coursework</a>
+                </h4>
+            </div>
+            <div class="col">
+                <h4 style="margin-left: 15px;"">
+                <a href=" #scrollspyHeading3">Work Projects</a>
+                </h4>
+            </div>
+            <div class="col">
+                <h4 style="margin-left: 15px;"">
+                <a href=" #scrollspyHeading4">Quick Hacks</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="padding-top: 50px;">
+        <h2 id="scrollspyHeading1">Personal Projects</h2>
+        <p>A selection of common imperial tap and drill sizes.</p>
+
+
+        <div class="row align-items-center" style="padding: 20px;">
+<!-- BEGIN IMPERIAL DRILL AND TAP -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="resources/sheet.css">
+<style type="text/css">
+    .ritz .waffle a {
+        color: inherit;
+    }
+
+    .ritz .waffle .s4 {
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        color: #000000;
+        font-family: "Courier New";
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s3 {
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        color: #000000;
+        font-family: "Courier New";
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s0 {
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        color: #000000;
+        font-family: "Courier New";
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s5 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        color: #000000;
+        font-family: "Courier New";
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s6 {
+        border-right: 1px SOLID #000000;
+        background-color: #fff2cc;
+        text-align: center;
+        color: #000000;
+        font-family: "Courier New";
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s9 {
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        font-family: "Courier New";
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s10 {
+        background-color: #ffffff;
+        text-align: left;
+        color: #000000;
+        font-family: Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s1 {
+        background-color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        color: #000000;
+        font-family: Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s2 {
+        background-color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        color: #000000;
+        font-family: Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s7 {
+        background-color: #fff2cc;
+        text-align: left;
+        color: #000000;
+        font-family: Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s11 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #fff2cc;
+        text-align: center;
+        color: #000000;
+        font-family: "Courier New";
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s8 {
+        background-color: #fff2cc;
+        text-align: left;
+        color: #000000;
+        font-family: Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+</style>
+<div class="ritz grid-container" dir="ltr">
+    <table class="waffle" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th class="row-header freezebar-vertical-handle"></th>
+                <th id="0C0" style="width:103px;" class="column-headers-background">A</th>
+                <th id="0C1" style="width:103px;" class="column-headers-background">B</th>
+                <th id="0C2" style="width:103px;" class="column-headers-background">C</th>
+                <th id="0C3" style="width:103px;" class="column-headers-background">D</th>
+                <th id="0C4" style="width:103px;" class="column-headers-background">E</th>
+                <th id="0C5" style="width:103px;" class="column-headers-background">F</th>
+                <th id="0C6" style="width:103px;" class="column-headers-background">G</th>
+                <th id="0C7" style="width:103px;" class="column-headers-background">H</th>
+                <th id="0C8" style="width:103px;" class="column-headers-background">I</th>
+                <th id="0C9" style="width:103px;" class="column-headers-background">J</th>
+                <th id="0C10" style="width:103px;" class="column-headers-background">K</th>
+                <th id="0C11" style="width:103px;" class="column-headers-background">L</th>
+                <!-- <th id="0C12" style="width:100px;" class="column-headers-background">M</th>
+                <th id="0C13" style="width:100px;" class="column-headers-background">N</th>
+                <th id="0C14" style="width:100px;" class="column-headers-background">O</th>
+                <th id="0C15" style="width:100px;" class="column-headers-background">P</th>
+                <th id="0C16" style="width:100px;" class="column-headers-background">Q</th>
+                <th id="0C17" style="width:100px;" class="column-headers-background">R</th>
+                <th id="0C18" style="width:100px;" class="column-headers-background">S</th>
+                <th id="0C19" style="width:100px;" class="column-headers-background">T</th>
+                <th id="0C20" style="width:100px;" class="column-headers-background">U</th>
+                <th id="0C21" style="width:100px;" class="column-headers-background">V</th>
+                <th id="0C22" style="width:100px;" class="column-headers-background">W</th>
+                <th id="0C23" style="width:100px;" class="column-headers-background">X</th>
+                <th id="0C24" style="width:100px;" class="column-headers-background">Y</th>
+                <th id="0C25" style="width:100px;" class="column-headers-background">Z</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 20px">
+                <th id="0R0" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">1</div>
+                </th>
+                <td class="s0" dir="ltr">Machine Screw</td>
+                <td class="s0" dir="ltr">Major Diameter</td>
+                <td class="s0" dir="ltr">Threads per Inch</td>
+                <td class="s0" dir="ltr">Minor Diameter</td>
+                <td class="s0" dir="ltr">75% Thread</td>
+                <td class="s0" dir="ltr">75% Thread</td>
+                <td class="s0" dir="ltr">50% Thread</td>
+                <td class="s0" dir="ltr">50% Thread</td>
+                <td class="s0" dir="ltr">Clearance Hole</td>
+                <td class="s0" dir="ltr">Clearance Hole</td>
+                <td class="s0" dir="ltr">Clearance Hole</td>
+                <td class="s0" dir="ltr">Clearance Hole</td>
+                <td class="s1"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R1" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">2</div>
+                </th>
+                <td class="s3" dir="ltr"></td>
+                <td class="s3" dir="ltr"></td>
+                <td class="s3" dir="ltr"></td>
+                <td class="s3" dir="ltr"></td>
+                <td class="s4" dir="ltr">Alum, Brass, Plastics</td>
+                <td class="s4" dir="ltr">Alum, Brass, Plastics</td>
+                <td class="s4" dir="ltr">Stainless Steel, Steel, Iron</td>
+                <td class="s4" dir="ltr">Stainless Steel, Steel, Iron</td>
+                <td class="s4" dir="ltr">Close Fit</td>
+                <td class="s4" dir="ltr">Close Fit</td>
+                <td class="s4" dir="ltr">Free Fit</td>
+                <td class="s4" dir="ltr">Free Fit</td>
+                <td class="s1"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R2" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">3</div>
+                </th>
+                <td class="s5" dir="ltr">[# or Diam]</td>
+                <td class="s5" dir="ltr">[in]</td>
+                <td class="s5" dir="ltr">[tpi]</td>
+                <td class="s5" dir="ltr">[in]</td>
+                <td class="s5" dir="ltr">Drill Size</td>
+                <td class="s5" dir="ltr">Decimal Equiv. [in]</td>
+                <td class="s5" dir="ltr">Drill Size</td>
+                <td class="s5" dir="ltr">Decimal Equiv. [in]</td>
+                <td class="s5" dir="ltr">Drill Size</td>
+                <td class="s5" dir="ltr">Decimal Equiv. [in]</td>
+                <td class="s5" dir="ltr">Drill Size</td>
+                <td class="s5" dir="ltr">Decimal Equiv. [in]</td>
+                <td class="s1"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr>
+                <th style="height:3px;" class="freezebar-cell freezebar-horizontal-handle"></th>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+                <td class="freezebar-cell"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R3" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">4</div>
+                </th>
+                <td class="s6" dir="ltr">0</td>
+                <td class="s6" dir="ltr">0.06</td>
+                <td class="s6" dir="ltr">80</td>
+                <td class="s6" dir="ltr">0.0447</td>
+                <td class="s6" dir="ltr">3/64</td>
+                <td class="s6" dir="ltr">0.0469</td>
+                <td class="s6" dir="ltr">55</td>
+                <td class="s6" dir="ltr">0.052</td>
+                <td class="s6" dir="ltr">52</td>
+                <td class="s6" dir="ltr">0.0635</td>
+                <td class="s6" dir="ltr">50</td>
+                <td class="s6" dir="ltr">0.07</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R4" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">5</div>
+                </th>
+                <td class="s9" dir="ltr">1</td>
+                <td class="s9" dir="ltr">0.073</td>
+                <td class="s9" dir="ltr">64</td>
+                <td class="s9" dir="ltr">0.0538</td>
+                <td class="s9" dir="ltr">53</td>
+                <td class="s9" dir="ltr">0.0595</td>
+                <td class="s9" dir="ltr">1/16</td>
+                <td class="s9" dir="ltr">0.0625</td>
+                <td class="s9" dir="ltr">48</td>
+                <td class="s9" dir="ltr">0.076</td>
+                <td class="s9" dir="ltr">46</td>
+                <td class="s9" dir="ltr">0.081</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R5" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">6</div>
+                </th>
+                <td class="s9" dir="ltr">1</td>
+                <td class="s9" dir="ltr">0.073</td>
+                <td class="s9" dir="ltr">72</td>
+                <td class="s9" dir="ltr">0.056</td>
+                <td class="s9" dir="ltr">53</td>
+                <td class="s9" dir="ltr">0.0595</td>
+                <td class="s9" dir="ltr">52</td>
+                <td class="s9" dir="ltr">0.0635</td>
+                <td class="s9" dir="ltr">48</td>
+                <td class="s9" dir="ltr">0.076</td>
+                <td class="s9" dir="ltr">46</td>
+                <td class="s9" dir="ltr">0.081</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R6" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">7</div>
+                </th>
+                <td class="s6" dir="ltr">2</td>
+                <td class="s6" dir="ltr">0.086</td>
+                <td class="s6" dir="ltr">56</td>
+                <td class="s6" dir="ltr">0.0641</td>
+                <td class="s6" dir="ltr">50</td>
+                <td class="s6" dir="ltr">0.07</td>
+                <td class="s6" dir="ltr">49</td>
+                <td class="s6" dir="ltr">0.073</td>
+                <td class="s6" dir="ltr">43</td>
+                <td class="s6" dir="ltr">0.089</td>
+                <td class="s6" dir="ltr">41</td>
+                <td class="s6" dir="ltr">0.096</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R7" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">8</div>
+                </th>
+                <td class="s6" dir="ltr">2</td>
+                <td class="s6" dir="ltr">0.086</td>
+                <td class="s6" dir="ltr">64</td>
+                <td class="s6" dir="ltr">0.0668</td>
+                <td class="s6" dir="ltr">50</td>
+                <td class="s6" dir="ltr">0.07</td>
+                <td class="s6" dir="ltr">48</td>
+                <td class="s6" dir="ltr">0.076</td>
+                <td class="s6" dir="ltr">43</td>
+                <td class="s6" dir="ltr">0.089</td>
+                <td class="s6" dir="ltr">41</td>
+                <td class="s6" dir="ltr">0.096</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R8" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">9</div>
+                </th>
+                <td class="s9" dir="ltr">3</td>
+                <td class="s9" dir="ltr">0.099</td>
+                <td class="s9" dir="ltr">48</td>
+                <td class="s9" dir="ltr">0.0734</td>
+                <td class="s9" dir="ltr">47</td>
+                <td class="s9" dir="ltr">0.0785</td>
+                <td class="s9" dir="ltr">44</td>
+                <td class="s9" dir="ltr">0.086</td>
+                <td class="s9" dir="ltr">37</td>
+                <td class="s9" dir="ltr">0.104</td>
+                <td class="s9" dir="ltr">35</td>
+                <td class="s9" dir="ltr">0.11</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R9" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">10</div>
+                </th>
+                <td class="s9" dir="ltr">3</td>
+                <td class="s9" dir="ltr">0.099</td>
+                <td class="s9" dir="ltr">56</td>
+                <td class="s9" dir="ltr">0.0771</td>
+                <td class="s9" dir="ltr">45</td>
+                <td class="s9" dir="ltr">0.082</td>
+                <td class="s9" dir="ltr">43</td>
+                <td class="s9" dir="ltr">0.089</td>
+                <td class="s9" dir="ltr">37</td>
+                <td class="s9" dir="ltr">0.104</td>
+                <td class="s9" dir="ltr">35</td>
+                <td class="s9" dir="ltr">0.11</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R10" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">11</div>
+                </th>
+                <td class="s6" dir="ltr">4</td>
+                <td class="s6" dir="ltr">0.112</td>
+                <td class="s6" dir="ltr">40</td>
+                <td class="s6" dir="ltr">0.0813</td>
+                <td class="s6" dir="ltr">43</td>
+                <td class="s6" dir="ltr">0.089</td>
+                <td class="s6" dir="ltr">41</td>
+                <td class="s6" dir="ltr">0.096</td>
+                <td class="s6" dir="ltr">32</td>
+                <td class="s6" dir="ltr">0.116</td>
+                <td class="s6" dir="ltr">30</td>
+                <td class="s6" dir="ltr">0.1285</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R11" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">12</div>
+                </th>
+                <td class="s6" dir="ltr">4</td>
+                <td class="s6" dir="ltr">0.112</td>
+                <td class="s6" dir="ltr">48</td>
+                <td class="s6" dir="ltr">0.0864</td>
+                <td class="s6" dir="ltr">42</td>
+                <td class="s6" dir="ltr">0.0935</td>
+                <td class="s6" dir="ltr">40</td>
+                <td class="s6" dir="ltr">0.098</td>
+                <td class="s6" dir="ltr">32</td>
+                <td class="s6" dir="ltr">0.116</td>
+                <td class="s6" dir="ltr">30</td>
+                <td class="s6" dir="ltr">0.1285</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R12" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">13</div>
+                </th>
+                <td class="s9" dir="ltr">5</td>
+                <td class="s9" dir="ltr">0.125</td>
+                <td class="s9" dir="ltr">40</td>
+                <td class="s9" dir="ltr">0.0943</td>
+                <td class="s9" dir="ltr">38</td>
+                <td class="s9" dir="ltr">0.1015</td>
+                <td class="s9" dir="ltr">7/64</td>
+                <td class="s9" dir="ltr">0.1094</td>
+                <td class="s9" dir="ltr">30</td>
+                <td class="s9" dir="ltr">0.1285</td>
+                <td class="s9" dir="ltr">29</td>
+                <td class="s9" dir="ltr">0.136</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R13" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">14</div>
+                </th>
+                <td class="s9" dir="ltr">5</td>
+                <td class="s9" dir="ltr">0.125</td>
+                <td class="s9" dir="ltr">44</td>
+                <td class="s9" dir="ltr">0.0971</td>
+                <td class="s9" dir="ltr">37</td>
+                <td class="s9" dir="ltr">0.104</td>
+                <td class="s9" dir="ltr">35</td>
+                <td class="s9" dir="ltr">0.11</td>
+                <td class="s9" dir="ltr">30</td>
+                <td class="s9" dir="ltr">0.1285</td>
+                <td class="s9" dir="ltr">29</td>
+                <td class="s9" dir="ltr">0.136</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R14" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">15</div>
+                </th>
+                <td class="s6" dir="ltr">6</td>
+                <td class="s6" dir="ltr">0.138</td>
+                <td class="s6" dir="ltr">32</td>
+                <td class="s6" dir="ltr">0.0997</td>
+                <td class="s6" dir="ltr">36</td>
+                <td class="s6" dir="ltr">0.1065</td>
+                <td class="s6" dir="ltr">32</td>
+                <td class="s6" dir="ltr">0.116</td>
+                <td class="s6" dir="ltr">27</td>
+                <td class="s6" dir="ltr">0.144</td>
+                <td class="s6" dir="ltr">25</td>
+                <td class="s6" dir="ltr">0.1495</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R15" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">16</div>
+                </th>
+                <td class="s6" dir="ltr">6</td>
+                <td class="s6" dir="ltr">0.138</td>
+                <td class="s6" dir="ltr">40</td>
+                <td class="s6" dir="ltr">0.1073</td>
+                <td class="s6" dir="ltr">33</td>
+                <td class="s6" dir="ltr">0.113</td>
+                <td class="s6" dir="ltr">31</td>
+                <td class="s6" dir="ltr">0.12</td>
+                <td class="s6" dir="ltr">27</td>
+                <td class="s6" dir="ltr">0.144</td>
+                <td class="s6" dir="ltr">25</td>
+                <td class="s6" dir="ltr">0.1495</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R16" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">17</div>
+                </th>
+                <td class="s9" dir="ltr">8</td>
+                <td class="s9" dir="ltr">0.164</td>
+                <td class="s9" dir="ltr">32</td>
+                <td class="s9" dir="ltr">0.1257</td>
+                <td class="s9" dir="ltr">29</td>
+                <td class="s9" dir="ltr">0.136</td>
+                <td class="s9" dir="ltr">27</td>
+                <td class="s9" dir="ltr">0.144</td>
+                <td class="s9" dir="ltr">18</td>
+                <td class="s9" dir="ltr">0.1695</td>
+                <td class="s9" dir="ltr">16</td>
+                <td class="s9" dir="ltr">0.177</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R17" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">18</div>
+                </th>
+                <td class="s9" dir="ltr">8</td>
+                <td class="s9" dir="ltr">0.164</td>
+                <td class="s9" dir="ltr">36</td>
+                <td class="s9" dir="ltr">0.1299</td>
+                <td class="s9" dir="ltr">29</td>
+                <td class="s9" dir="ltr">0.136</td>
+                <td class="s9" dir="ltr">26</td>
+                <td class="s9" dir="ltr">0.147</td>
+                <td class="s9" dir="ltr">18</td>
+                <td class="s9" dir="ltr">0.1695</td>
+                <td class="s9" dir="ltr">16</td>
+                <td class="s9" dir="ltr">0.177</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R18" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">19</div>
+                </th>
+                <td class="s6" dir="ltr">10</td>
+                <td class="s6" dir="ltr">0.19</td>
+                <td class="s6" dir="ltr">24</td>
+                <td class="s6" dir="ltr">0.1389</td>
+                <td class="s6" dir="ltr">25</td>
+                <td class="s6" dir="ltr">0.1495</td>
+                <td class="s6" dir="ltr">20</td>
+                <td class="s6" dir="ltr">0.161</td>
+                <td class="s6" dir="ltr">9</td>
+                <td class="s6" dir="ltr">0.196</td>
+                <td class="s6" dir="ltr">7</td>
+                <td class="s6" dir="ltr">0.201</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R19" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">20</div>
+                </th>
+                <td class="s6" dir="ltr">10</td>
+                <td class="s6" dir="ltr">0.19</td>
+                <td class="s6" dir="ltr">32</td>
+                <td class="s6" dir="ltr">0.1517</td>
+                <td class="s6" dir="ltr">21</td>
+                <td class="s6" dir="ltr">0.159</td>
+                <td class="s6" dir="ltr">18</td>
+                <td class="s6" dir="ltr">0.1695</td>
+                <td class="s6" dir="ltr">9</td>
+                <td class="s6" dir="ltr">0.196</td>
+                <td class="s6" dir="ltr">7</td>
+                <td class="s6" dir="ltr">0.201</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R20" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">21</div>
+                </th>
+                <td class="s9" dir="ltr">12</td>
+                <td class="s9" dir="ltr">0.216</td>
+                <td class="s9" dir="ltr">24</td>
+                <td class="s9" dir="ltr">0.1649</td>
+                <td class="s9" dir="ltr">16</td>
+                <td class="s9" dir="ltr">0.177</td>
+                <td class="s9" dir="ltr">12</td>
+                <td class="s9" dir="ltr">0.189</td>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s9" dir="ltr">0.221</td>
+                <td class="s9" dir="ltr">1</td>
+                <td class="s9" dir="ltr">0.228</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R21" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">22</div>
+                </th>
+                <td class="s9" dir="ltr">12</td>
+                <td class="s9" dir="ltr">0.216</td>
+                <td class="s9" dir="ltr">28</td>
+                <td class="s9" dir="ltr">0.1722</td>
+                <td class="s9" dir="ltr">14</td>
+                <td class="s9" dir="ltr">0.182</td>
+                <td class="s9" dir="ltr">10</td>
+                <td class="s9" dir="ltr">0.1935</td>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s9" dir="ltr">0.221</td>
+                <td class="s9" dir="ltr">1</td>
+                <td class="s9" dir="ltr">0.228</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R22" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">23</div>
+                </th>
+                <td class="s9" dir="ltr">12</td>
+                <td class="s9" dir="ltr">0.216</td>
+                <td class="s9" dir="ltr">32</td>
+                <td class="s9" dir="ltr">0.1777</td>
+                <td class="s9" dir="ltr">13</td>
+                <td class="s9" dir="ltr">0.185</td>
+                <td class="s9" dir="ltr">9</td>
+                <td class="s9" dir="ltr">0.196</td>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s9" dir="ltr">0.221</td>
+                <td class="s9" dir="ltr">1</td>
+                <td class="s9" dir="ltr">0.228</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R23" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">24</div>
+                </th>
+                <td class="s6" dir="ltr">1/4</td>
+                <td class="s6" dir="ltr">0.25</td>
+                <td class="s6" dir="ltr">20</td>
+                <td class="s6" dir="ltr">0.1887</td>
+                <td class="s6" dir="ltr">7</td>
+                <td class="s6" dir="ltr">0.201</td>
+                <td class="s6" dir="ltr">7/32</td>
+                <td class="s6" dir="ltr">0.2188</td>
+                <td class="s6" dir="ltr">F</td>
+                <td class="s6" dir="ltr">0.257</td>
+                <td class="s6" dir="ltr">H</td>
+                <td class="s6" dir="ltr">0.266</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R24" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">25</div>
+                </th>
+                <td class="s6" dir="ltr">1/4</td>
+                <td class="s6" dir="ltr">0.25</td>
+                <td class="s6" dir="ltr">28</td>
+                <td class="s6" dir="ltr">0.2062</td>
+                <td class="s6" dir="ltr">3</td>
+                <td class="s6" dir="ltr">0.213</td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s6" dir="ltr">0.228</td>
+                <td class="s6" dir="ltr">F</td>
+                <td class="s6" dir="ltr">0.257</td>
+                <td class="s6" dir="ltr">H</td>
+                <td class="s6" dir="ltr">0.266</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R25" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">26</div>
+                </th>
+                <td class="s6" dir="ltr">1/4</td>
+                <td class="s6" dir="ltr">0.25</td>
+                <td class="s6" dir="ltr">32</td>
+                <td class="s6" dir="ltr">0.2117</td>
+                <td class="s6" dir="ltr">7/32</td>
+                <td class="s6" dir="ltr">0.2188</td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s6" dir="ltr">0.228</td>
+                <td class="s6" dir="ltr">F</td>
+                <td class="s6" dir="ltr">0.257</td>
+                <td class="s6" dir="ltr">H</td>
+                <td class="s6" dir="ltr">0.266</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R26" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">27</div>
+                </th>
+                <td class="s9" dir="ltr">5/16</td>
+                <td class="s9" dir="ltr">0.3125</td>
+                <td class="s9" dir="ltr">18</td>
+                <td class="s9" dir="ltr">0.2443</td>
+                <td class="s9" dir="ltr">F</td>
+                <td class="s9" dir="ltr">0.257</td>
+                <td class="s9" dir="ltr">J</td>
+                <td class="s9" dir="ltr">0.277</td>
+                <td class="s9" dir="ltr">P</td>
+                <td class="s9" dir="ltr">0.323</td>
+                <td class="s9" dir="ltr">Q</td>
+                <td class="s9" dir="ltr">0.332</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R27" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">28</div>
+                </th>
+                <td class="s9" dir="ltr">5/16</td>
+                <td class="s9" dir="ltr">0.3125</td>
+                <td class="s9" dir="ltr">24</td>
+                <td class="s9" dir="ltr">0.2614</td>
+                <td class="s9" dir="ltr">I</td>
+                <td class="s9" dir="ltr">0.272</td>
+                <td class="s9" dir="ltr">9/32</td>
+                <td class="s9" dir="ltr">0.2812</td>
+                <td class="s9" dir="ltr">P</td>
+                <td class="s9" dir="ltr">0.323</td>
+                <td class="s9" dir="ltr">Q</td>
+                <td class="s9" dir="ltr">0.332</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R28" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">29</div>
+                </th>
+                <td class="s9" dir="ltr">5/16</td>
+                <td class="s9" dir="ltr">0.3125</td>
+                <td class="s9" dir="ltr">32</td>
+                <td class="s9" dir="ltr">0.2742</td>
+                <td class="s9" dir="ltr">9/32</td>
+                <td class="s9" dir="ltr">0.2812</td>
+                <td class="s9" dir="ltr">L</td>
+                <td class="s9" dir="ltr">0.29</td>
+                <td class="s9" dir="ltr">P</td>
+                <td class="s9" dir="ltr">0.323</td>
+                <td class="s9" dir="ltr">Q</td>
+                <td class="s9" dir="ltr">0.332</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R29" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">30</div>
+                </th>
+                <td class="s6" dir="ltr">3/8</td>
+                <td class="s6" dir="ltr">0.375</td>
+                <td class="s6" dir="ltr">16</td>
+                <td class="s6" dir="ltr">0.2983</td>
+                <td class="s6" dir="ltr">5/16</td>
+                <td class="s6" dir="ltr">0.3125</td>
+                <td class="s6" dir="ltr">Q</td>
+                <td class="s6" dir="ltr">0.332</td>
+                <td class="s6" dir="ltr">W</td>
+                <td class="s6" dir="ltr">0.386</td>
+                <td class="s6" dir="ltr">X</td>
+                <td class="s6" dir="ltr">0.397</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R30" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">31</div>
+                </th>
+                <td class="s6" dir="ltr">3/8</td>
+                <td class="s6" dir="ltr">0.375</td>
+                <td class="s6" dir="ltr">24</td>
+                <td class="s6" dir="ltr">0.3239</td>
+                <td class="s6" dir="ltr">Q</td>
+                <td class="s6" dir="ltr">0.332</td>
+                <td class="s6" dir="ltr">S</td>
+                <td class="s6" dir="ltr">0.348</td>
+                <td class="s6" dir="ltr">W</td>
+                <td class="s6" dir="ltr">0.386</td>
+                <td class="s6" dir="ltr">X</td>
+                <td class="s6" dir="ltr">0.397</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R31" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">32</div>
+                </th>
+                <td class="s6" dir="ltr">3/8</td>
+                <td class="s6" dir="ltr">0.375</td>
+                <td class="s6" dir="ltr">32</td>
+                <td class="s6" dir="ltr">0.3367</td>
+                <td class="s6" dir="ltr">11/32</td>
+                <td class="s6" dir="ltr">0.3438</td>
+                <td class="s6" dir="ltr">T</td>
+                <td class="s6" dir="ltr">0.358</td>
+                <td class="s6" dir="ltr">W</td>
+                <td class="s6" dir="ltr">0.386</td>
+                <td class="s6" dir="ltr">X</td>
+                <td class="s6" dir="ltr">0.397</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R32" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">33</div>
+                </th>
+                <td class="s9" dir="ltr">7/16</td>
+                <td class="s9" dir="ltr">0.4375</td>
+                <td class="s9" dir="ltr">14</td>
+                <td class="s9" dir="ltr">0.3499</td>
+                <td class="s9" dir="ltr">U</td>
+                <td class="s9" dir="ltr">0.368</td>
+                <td class="s9" dir="ltr">25/64</td>
+                <td class="s9" dir="ltr">0.3906</td>
+                <td class="s9" dir="ltr">29/64</td>
+                <td class="s9" dir="ltr">0.4531</td>
+                <td class="s9" dir="ltr">15/32</td>
+                <td class="s9" dir="ltr">0.4687</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R33" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">34</div>
+                </th>
+                <td class="s9" dir="ltr">7/16</td>
+                <td class="s9" dir="ltr">0.4375</td>
+                <td class="s9" dir="ltr">20</td>
+                <td class="s9" dir="ltr">0.3762</td>
+                <td class="s9" dir="ltr">25/64</td>
+                <td class="s9" dir="ltr">0.3906</td>
+                <td class="s9" dir="ltr">13/32</td>
+                <td class="s9" dir="ltr">0.4062</td>
+                <td class="s9" dir="ltr">29/64</td>
+                <td class="s9" dir="ltr">0.4531</td>
+                <td class="s9" dir="ltr">15/32</td>
+                <td class="s9" dir="ltr">0.4687</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R34" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">35</div>
+                </th>
+                <td class="s9" dir="ltr">7/16</td>
+                <td class="s9" dir="ltr">0.4375</td>
+                <td class="s9" dir="ltr">28</td>
+                <td class="s9" dir="ltr">0.3937</td>
+                <td class="s9" dir="ltr">Y</td>
+                <td class="s9" dir="ltr">0.404</td>
+                <td class="s9" dir="ltr">Z</td>
+                <td class="s9" dir="ltr">0.413</td>
+                <td class="s9" dir="ltr">29/64</td>
+                <td class="s9" dir="ltr">0.4531</td>
+                <td class="s9" dir="ltr">15/32</td>
+                <td class="s9" dir="ltr">0.4687</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R35" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">36</div>
+                </th>
+                <td class="s6" dir="ltr">1/2</td>
+                <td class="s6" dir="ltr">0.5</td>
+                <td class="s6" dir="ltr">13</td>
+                <td class="s6" dir="ltr">0.4056</td>
+                <td class="s6" dir="ltr">27/64</td>
+                <td class="s6" dir="ltr">0.4219</td>
+                <td class="s6" dir="ltr">29/64</td>
+                <td class="s6" dir="ltr">0.4531</td>
+                <td class="s6" dir="ltr">33/64</td>
+                <td class="s6" dir="ltr">0.5156</td>
+                <td class="s6" dir="ltr">17/32</td>
+                <td class="s6" dir="ltr">0.5312</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R36" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">37</div>
+                </th>
+                <td class="s6" dir="ltr">1/2</td>
+                <td class="s6" dir="ltr">0.5</td>
+                <td class="s6" dir="ltr">20</td>
+                <td class="s6" dir="ltr">0.4387</td>
+                <td class="s6" dir="ltr">29/64</td>
+                <td class="s6" dir="ltr">0.4531</td>
+                <td class="s6" dir="ltr">15/32</td>
+                <td class="s6" dir="ltr">0.4688</td>
+                <td class="s6" dir="ltr">33/64</td>
+                <td class="s6" dir="ltr">0.5156</td>
+                <td class="s6" dir="ltr">17/32</td>
+                <td class="s6" dir="ltr">0.5312</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R37" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">38</div>
+                </th>
+                <td class="s6" dir="ltr">1/2</td>
+                <td class="s6" dir="ltr">0.5</td>
+                <td class="s6" dir="ltr">28</td>
+                <td class="s6" dir="ltr">0.4562</td>
+                <td class="s6" dir="ltr">15/32</td>
+                <td class="s6" dir="ltr">0.4688</td>
+                <td class="s6" dir="ltr">15/32</td>
+                <td class="s6" dir="ltr">0.4688</td>
+                <td class="s6" dir="ltr">33/64</td>
+                <td class="s6" dir="ltr">0.5156</td>
+                <td class="s6" dir="ltr">17/32</td>
+                <td class="s6" dir="ltr">0.5312</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R38" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">39</div>
+                </th>
+                <td class="s9" dir="ltr">9/16</td>
+                <td class="s9" dir="ltr">0.5625</td>
+                <td class="s9" dir="ltr">12</td>
+                <td class="s9" dir="ltr">0.4603</td>
+                <td class="s9" dir="ltr">31/64</td>
+                <td class="s9" dir="ltr">0.4844</td>
+                <td class="s9" dir="ltr">33/64</td>
+                <td class="s9" dir="ltr">0.5156</td>
+                <td class="s9" dir="ltr">37/64</td>
+                <td class="s9" dir="ltr">0.5781</td>
+                <td class="s9" dir="ltr">19/32</td>
+                <td class="s9" dir="ltr">0.5938</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R39" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">40</div>
+                </th>
+                <td class="s9" dir="ltr">9/16</td>
+                <td class="s9" dir="ltr">0.5625</td>
+                <td class="s9" dir="ltr">18</td>
+                <td class="s9" dir="ltr">0.4943</td>
+                <td class="s9" dir="ltr">33/64</td>
+                <td class="s9" dir="ltr">0.5156</td>
+                <td class="s9" dir="ltr">17/32</td>
+                <td class="s9" dir="ltr">0.5312</td>
+                <td class="s9" dir="ltr">37/64</td>
+                <td class="s9" dir="ltr">0.5781</td>
+                <td class="s9" dir="ltr">19/32</td>
+                <td class="s9" dir="ltr">0.5938</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R40" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">41</div>
+                </th>
+                <td class="s9" dir="ltr">9/16</td>
+                <td class="s9" dir="ltr">0.5625</td>
+                <td class="s9" dir="ltr">24</td>
+                <td class="s9" dir="ltr">0.5114</td>
+                <td class="s9" dir="ltr">33/64</td>
+                <td class="s9" dir="ltr">0.5156</td>
+                <td class="s9" dir="ltr">17/32</td>
+                <td class="s9" dir="ltr">0.5312</td>
+                <td class="s9" dir="ltr">37/64</td>
+                <td class="s9" dir="ltr">0.5781</td>
+                <td class="s9" dir="ltr">19/32</td>
+                <td class="s9" dir="ltr">0.5938</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R41" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">42</div>
+                </th>
+                <td class="s6" dir="ltr">5/8</td>
+                <td class="s6" dir="ltr">0.625</td>
+                <td class="s6" dir="ltr">11</td>
+                <td class="s6" dir="ltr">0.5135</td>
+                <td class="s6" dir="ltr">17/32</td>
+                <td class="s6" dir="ltr">0.5312</td>
+                <td class="s6" dir="ltr">9/16</td>
+                <td class="s6" dir="ltr">0.5625</td>
+                <td class="s6" dir="ltr">41/64</td>
+                <td class="s6" dir="ltr">0.6406</td>
+                <td class="s6" dir="ltr">21/32</td>
+                <td class="s6" dir="ltr">0.6562</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R42" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">43</div>
+                </th>
+                <td class="s6" dir="ltr">5/8</td>
+                <td class="s6" dir="ltr">0.625</td>
+                <td class="s6" dir="ltr">18</td>
+                <td class="s6" dir="ltr">0.5568</td>
+                <td class="s6" dir="ltr">37/64</td>
+                <td class="s6" dir="ltr">0.5781</td>
+                <td class="s6" dir="ltr">19/32</td>
+                <td class="s6" dir="ltr">0.5938</td>
+                <td class="s6" dir="ltr">41/64</td>
+                <td class="s6" dir="ltr">0.6406</td>
+                <td class="s6" dir="ltr">21/32</td>
+                <td class="s6" dir="ltr">0.6562</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R43" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">44</div>
+                </th>
+                <td class="s6" dir="ltr">5/8</td>
+                <td class="s6" dir="ltr">0.625</td>
+                <td class="s6" dir="ltr">24</td>
+                <td class="s6" dir="ltr">0.5739</td>
+                <td class="s6" dir="ltr">37/64</td>
+                <td class="s6" dir="ltr">0.5781</td>
+                <td class="s6" dir="ltr">19/32</td>
+                <td class="s6" dir="ltr">0.5938</td>
+                <td class="s6" dir="ltr">41/64</td>
+                <td class="s6" dir="ltr">0.6406</td>
+                <td class="s6" dir="ltr">21/32</td>
+                <td class="s6" dir="ltr">0.6562</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R44" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">45</div>
+                </th>
+                <td class="s9" dir="ltr">11/16</td>
+                <td class="s9" dir="ltr">0.6875</td>
+                <td class="s9" dir="ltr">24</td>
+                <td class="s9" dir="ltr">0.6364</td>
+                <td class="s9" dir="ltr">41/64</td>
+                <td class="s9" dir="ltr">0.6406</td>
+                <td class="s9" dir="ltr">21/32</td>
+                <td class="s9" dir="ltr">0.6562</td>
+                <td class="s9" dir="ltr">45/64</td>
+                <td class="s9" dir="ltr">0.7031</td>
+                <td class="s9" dir="ltr">23/32</td>
+                <td class="s9" dir="ltr">0.6562</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R45" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">46</div>
+                </th>
+                <td class="s6" dir="ltr">3/4</td>
+                <td class="s6" dir="ltr">0.75</td>
+                <td class="s6" dir="ltr">10</td>
+                <td class="s6" dir="ltr">0.6273</td>
+                <td class="s6" dir="ltr">21/32</td>
+                <td class="s6" dir="ltr">0.6562</td>
+                <td class="s6" dir="ltr">11/16</td>
+                <td class="s6" dir="ltr">0.6875</td>
+                <td class="s6" dir="ltr">49/64</td>
+                <td class="s6" dir="ltr">0.7656</td>
+                <td class="s6" dir="ltr">25/32</td>
+                <td class="s6" dir="ltr">0.7812</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R46" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">47</div>
+                </th>
+                <td class="s6" dir="ltr">3/4</td>
+                <td class="s6" dir="ltr">0.75</td>
+                <td class="s6" dir="ltr">16</td>
+                <td class="s6" dir="ltr">0.6733</td>
+                <td class="s6" dir="ltr">11/16</td>
+                <td class="s6" dir="ltr">0.6875</td>
+                <td class="s6" dir="ltr">45/64</td>
+                <td class="s6" dir="ltr">0.7031</td>
+                <td class="s6" dir="ltr">49/64</td>
+                <td class="s6" dir="ltr">0.7656</td>
+                <td class="s6" dir="ltr">25/32</td>
+                <td class="s6" dir="ltr">0.7812</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R47" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">48</div>
+                </th>
+                <td class="s6" dir="ltr">3/4</td>
+                <td class="s6" dir="ltr">0.75</td>
+                <td class="s6" dir="ltr">20</td>
+                <td class="s6" dir="ltr">0.6887</td>
+                <td class="s6" dir="ltr">45/64</td>
+                <td class="s6" dir="ltr">0.7031</td>
+                <td class="s6" dir="ltr">23/32</td>
+                <td class="s6" dir="ltr">0.7188</td>
+                <td class="s6" dir="ltr">49/64</td>
+                <td class="s6" dir="ltr">0.7656</td>
+                <td class="s6" dir="ltr">25/32</td>
+                <td class="s6" dir="ltr">0.7812</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R48" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">49</div>
+                </th>
+                <td class="s9" dir="ltr">13/16</td>
+                <td class="s9" dir="ltr">0.8125</td>
+                <td class="s9" dir="ltr">20</td>
+                <td class="s9" dir="ltr">0.7512</td>
+                <td class="s9" dir="ltr">49/64</td>
+                <td class="s9" dir="ltr">0.7656</td>
+                <td class="s9" dir="ltr">25/32</td>
+                <td class="s9" dir="ltr">0.7812</td>
+                <td class="s9" dir="ltr">53/64</td>
+                <td class="s9" dir="ltr">0.8281</td>
+                <td class="s9" dir="ltr">27/32</td>
+                <td class="s9" dir="ltr">0.8438</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R49" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">50</div>
+                </th>
+                <td class="s6" dir="ltr">7/8</td>
+                <td class="s6" dir="ltr">0.875</td>
+                <td class="s6" dir="ltr">9</td>
+                <td class="s6" dir="ltr">0.7387</td>
+                <td class="s6" dir="ltr">49/64</td>
+                <td class="s6" dir="ltr">0.7656</td>
+                <td class="s6" dir="ltr">51/64</td>
+                <td class="s6" dir="ltr">0.7969</td>
+                <td class="s6" dir="ltr">57/64</td>
+                <td class="s6" dir="ltr">0.8906</td>
+                <td class="s6" dir="ltr">29/32</td>
+                <td class="s6" dir="ltr">0.9062</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R50" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">51</div>
+                </th>
+                <td class="s6" dir="ltr">7/8</td>
+                <td class="s6" dir="ltr">0.875</td>
+                <td class="s6" dir="ltr">14</td>
+                <td class="s6" dir="ltr">0.7874</td>
+                <td class="s6" dir="ltr">13/16</td>
+                <td class="s6" dir="ltr">0.8125</td>
+                <td class="s6" dir="ltr">53/64</td>
+                <td class="s6" dir="ltr">0.8281</td>
+                <td class="s6" dir="ltr">57/64</td>
+                <td class="s6" dir="ltr">0.8906</td>
+                <td class="s6" dir="ltr">29/32</td>
+                <td class="s6" dir="ltr">0.9062</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R51" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">52</div>
+                </th>
+                <td class="s6" dir="ltr">7/8</td>
+                <td class="s6" dir="ltr">0.875</td>
+                <td class="s6" dir="ltr">20</td>
+                <td class="s6" dir="ltr">0.8137</td>
+                <td class="s6" dir="ltr">53/64</td>
+                <td class="s6" dir="ltr">0.8281</td>
+                <td class="s6" dir="ltr">27/32</td>
+                <td class="s6" dir="ltr">0.8438</td>
+                <td class="s6" dir="ltr">57/64</td>
+                <td class="s6" dir="ltr">0.8906</td>
+                <td class="s6" dir="ltr">29/32</td>
+                <td class="s6" dir="ltr">0.9062</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R52" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">53</div>
+                </th>
+                <td class="s9" dir="ltr">15/16</td>
+                <td class="s9" dir="ltr">0.9375</td>
+                <td class="s9" dir="ltr">20</td>
+                <td class="s9" dir="ltr">0.8762</td>
+                <td class="s9" dir="ltr">57/64</td>
+                <td class="s9" dir="ltr">0.8906</td>
+                <td class="s9" dir="ltr">29/32</td>
+                <td class="s9" dir="ltr">0.9062</td>
+                <td class="s9" dir="ltr">61/64</td>
+                <td class="s9" dir="ltr">0.9531</td>
+                <td class="s9" dir="ltr">31/32</td>
+                <td class="s9" dir="ltr">0.9688</td>
+                <td class="s10"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R53" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">54</div>
+                </th>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s6" dir="ltr">8</td>
+                <td class="s6" dir="ltr">0.8466</td>
+                <td class="s6" dir="ltr">7/8</td>
+                <td class="s6" dir="ltr">0.875</td>
+                <td class="s6" dir="ltr">59/64</td>
+                <td class="s6" dir="ltr">0.9219</td>
+                <td class="s6" dir="ltr">1-1/64</td>
+                <td class="s6" dir="ltr">1.0156</td>
+                <td class="s6" dir="ltr">1-1/32</td>
+                <td class="s6" dir="ltr">1.0313</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R54" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">55</div>
+                </th>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s6" dir="ltr">12</td>
+                <td class="s6" dir="ltr">0.8978</td>
+                <td class="s6" dir="ltr">15/16</td>
+                <td class="s6" dir="ltr">0.9375</td>
+                <td class="s6" dir="ltr">61/64</td>
+                <td class="s6" dir="ltr">0.9531</td>
+                <td class="s6" dir="ltr">1-1/64</td>
+                <td class="s6" dir="ltr">1.0156</td>
+                <td class="s6" dir="ltr">1-1/32</td>
+                <td class="s6" dir="ltr">1.0313</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="0R55" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">56</div>
+                </th>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s11" dir="ltr">1</td>
+                <td class="s11" dir="ltr">20</td>
+                <td class="s11" dir="ltr">0.9387</td>
+                <td class="s11" dir="ltr">61/64</td>
+                <td class="s11" dir="ltr">0.9531</td>
+                <td class="s11" dir="ltr">31/32</td>
+                <td class="s11" dir="ltr">0.9688</td>
+                <td class="s11" dir="ltr">1-1/64</td>
+                <td class="s11" dir="ltr">1.0156</td>
+                <td class="s11" dir="ltr">1-1/32</td>
+                <td class="s11" dir="ltr">1.0313</td>
+                <td class="s7"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+                <td class="s8"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- END IMPERIAL DRILL AND TAP -->
+
+            <!-- <div data-include="ImperialDrillandTap"></div> -->
+        </div>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            Nothing here.
+        </div>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\Glasses01.jpg" alt="Sander">
+            </div>
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\Glasses02.jpg" alt="Sander">
+            </div>
+            <div class="col portfolio-text">
+                <h3>Engraved Glasses for a Friend</h3>
+                <h4>Winter 2019</h4>
+                <p>Using my iPad, I traced the outline of a photo of a friend's dog. I exported that image, laser cut
+                    some special stickers, and media blasted the sketch onto a set of glasses as a Christmas gift.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container" style="padding-top: 50px;">
+        <div class="row align-items-center">
+            <div class="col porfolio-text" style="text-align: center" ;>
+
+                <h4><a href="#scrollspyHeadingNoteworthy">Back to Top</a></h4>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container" style="padding-top: 50px;">
+        <h2 id="scrollspyHeading2">Other Coursework</h2>
+        <p>More coursework from undergrad and grad school.</p>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\PCNL01.jpg" alt="Sander">
+            </div>
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\PCNL02.jpg" alt="Sander">
+            </div>
+            <div class="col portfolio-text">
+                <h3>PCNL Patient Positioning Device</h3>
+                <h4>Spring 2017</h4>
+                <p>Our senior capstone project at BU paired us with Dr. Brian Eisner at the Massachusetts General
+                    Hospital. We were tasked to create a novel patient positioning device for his PCNL kidney stone
+                    removal surgeries.</p>
+                <p>When finalizing the design, I made considerations for everything from radioluscent properties (X-ray
+                    transparency) to strength and safety.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\DoyToy01.png" alt="Sander">
+            </div>
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\DogToy02.jpg" alt="Sander">
+            </div>
+            <div class="col portfolio-text">
+                <h3>Remote Controlled Dog Toy</h3>
+                <h4>Spring 2017</h4>
+                <p>Inspired by the BB8 robot from Star Wars, my teammate Summer and I set out to design our own
+                    RC-controlled, ball-shaped dog toy. The entire toy was built inside a Jolly Ball, a large HDPE dog
+                    toy. I was responsible for CAD, component selection, fabrication.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container" style="padding-top: 50px;">
+        <div class="row align-items-center">
+            <div class="col porfolio-text" style="text-align: center" ;>
+
+                <h4><a href="#scrollspyHeadingNoteworthy">Back to Top</a></h4>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="padding-top: 50px;">
+        <h2 id="scrollspyHeading3">Work Projects</h2>
+        <p>More projects I've completed at work.</p>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\POUED01.jpg" alt="POUED">
+            </div>
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\POUED02.jpg" alt="POUED">
+            </div>
+            <div class="col portfolio-text">
+                <h3>POUED Controller and Power Electronics</h3>
+                <h4>Fall 2019</h4>
+                <p>I had just a week to design, assemble, and test this miniature, PLC-based controller for testing
+                    Point of Use Electrodialysis Desalination. It had three power supplies, an optional Raspberry Pi
+                    mini computer, digitally controlled buck converters, and a full schematic for easy debugging.</p>
+                <p>This project was the first time I learned to respect flyback in circuits driving inductive loads .
+                    One of the PLC
+                    channels was quickly killed by flyback after switching a solenoid a few too many times.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\Gravity01.jpg" alt="POUED">
+            </div>
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\Gravity02.jpg" alt="POUED">
+            </div>
+            <div class="col portfolio-text">
+                <h3>Improved Gravity Feeders</h3>
+                <h4>Spring 2020</h4>
+                <p>The gravity feeders used in the Automated Design and Manufacturing Laboratroy were a mess, comprised
+                    of terrible sheet metal and thumbscrews. I rebuilt the feeders into hulking HDPE slides. No matter
+                    how many times a student crashed a robot, these feeders would stay in place and feed stock
+                    consistently.</p>
+                <p>Check out the rest of this project: <a href="automation.html">Teaching Principles of Automated
+                        Manufacturing</a></p>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\Vise01.jpg" alt="Vise01">
+                <img class="portfolio-pic" src="StaticImages\Other\Vise02.jpg" alt="Vise02" style="margin-top: 10px;">
+            </div>
+            <div class="col pic-col">
+                <blockquote class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/CF0n-iag0p0/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <div style="padding:16px;"> <a
+                            href="https://www.instagram.com/p/CF0n-iag0p0/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                            target="_blank">
+                            <div style=" display: flex; flex-direction: row; align-items: center;">
+                                <div
+                                    style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                                    height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                                    xmlns:xlink="https://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                            <g>
+                                                <path
+                                                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <div style="padding-top: 8px;">
+                                <div
+                                    style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                    View this post on Instagram</div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                    </div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                    </div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div
+                                        style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                </div>
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                </div>
+                            </div>
+                        </a>
+                        <p
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/p/CF0n-iag0p0/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                target="_blank">A post shared by EPIC@BU (@bu.epic)</a>
+                        </p>
+                    </div>
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+            <div class="col portfolio-text">
+                <h3>Universal Vise Jaws</h3>
+                <h4>Spring 2020</h4>
+                <p>The Automated Design and Manufacturing Laboratroy desperately needed standardization. Students were
+                    provided with seven unique pieces of stock material and were responsible for cutting their own soft
+                    jaws. This ruined the repeatability of the robots as students exhanged different jaws in and out of
+                    the CNC machines. I designed and manufactured universal vise jaws that could accomodate all of the
+                    stock pieces used in the ADML.</p>
+                <p>I used to manage some of the social media for the BU Engineering Product Innovation Center (EPIC).
+                    Watch these vises in action on Instagram!</p>
+                <p>Check out the rest of this project: <a href="automation.html">Teaching Principles of Automated
+                        Manufacturing</a></p>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\Squaring01.jpg" alt="POUED">
+            </div>
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\Squaring02.jpg" alt="POUED">
+            </div>
+            <div class="col portfolio-text">
+                <h3>Squaring Fixture for Reliable Automation</h3>
+                <h4>Spring 2020</h4>
+                <p>As a robot collected a piece of stock material from a gravity feeder, it sometimes would catch or
+                    slip on the gravity feeder, ruining the repeatability of the process. I created these small
+                    "squaring" fixutres that
+                    allowed the robot to bump the piece against a known 90 degree reference. The robot then collect the
+                    part again before placing it
+                    on a pallet or in a milling machine.</p>
+                <p>Check out the rest of this project: <a href="automation.html">Teaching Principles of Automated
+                        Manufacturing</a></p>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="padding: 20px;">
+            <div class="col pic-col">
+                <img class="portfolio-pic" src="StaticImages\Other\FaceShield01.jpg" alt="POUED">
+            </div>
+            <div class="col pic-col">
+                <iframe class="portfolio-pic" style="height: 400px"
+                    src="https://www.youtube.com/embed/FCeQ7rXbVEg?si=RD9q3htMenn2r67g" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col portfolio-text">
+                <h3>Face Shields</h3>
+                <h4>Spring 2020</h4>
+                <p>In the spring of 2020, EPIC began making face shields comprised of a bent strip of polycarbonate and
+                    transparency films. I programmed one of the class robots to bend the headbands for me while I worked
+                    on
+                    other components.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 50px;">
+        <div class="row align-items-center">
+            <div class="col porfolio-text" style="text-align: center" ;>
+
+                <h4><a href="#scrollspyHeadingNoteworthy">Back to Top</a></h4>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container" style="padding-top: 50px;">
+        <h2 id="scrollspyHeading4">Quick Hacks</h2>
+        <p>Notes to self along with a few tips and tricks!</p>
+
+        <div class="row align-items-center"">
+            <div class=" col pic-col">
+            <img class="portfolio-pic" src="StaticImages/Other/WiperMotor02.jpeg" alt="Camera Slide">
+        </div>
+        <div class="col pic-col">
+            <img class="portfolio-pic" src="StaticImages/Other/WiperMotor01.png" alt="Camera Slide">
+        </div>
+        <div class="col portfolio-text">
+            <h3>Reverse a Wiper Motor</h3>
+            <h4>Fall 2023</h4>
+            <p>Wiper motors are dirt cheap and make great high torque actuators. Unfortunately, most are wired to
+                operate in only one direction. Just a few minutes with a multimeter and a pair of snips and you can
+                easily remove the park circuit, allowing the motor to rotate in both directions!</p>
+            <p>Check out the rest of this project: <a href="fishfeed.html">Automated, Effective Fish Feeding</a></p>
+        </div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col pic-col">
+            <img class="portfolio-pic" src="StaticImages/Other/EmergencyCollet01.png" alt="Emergency Collet">
+        </div>
+        <div class="col pic-col">
+            <img class="portfolio-pic" src="StaticImages/Other/EmergencyCollet02.png" alt="Emergency Collet">
+        </div>
+        <div class="col porfolio-text">
+            <h3>Emergency Collet</h3>
+            <h4>Spring 2023</h4>
+            <p>Odd parts, like a small flanged bushing, can be tough to hold on a lathe. However, in just a few
+                minutes with a boring bar and a bandsaw, its super easy to make an emergency collet.</p>
+            <p>Check out the rest of this project: <a href="lathe.html">Blazing Fast Turning</a></p>
+        </div>
+    </div>
+
+    </div>
+
+
+    <div class="container" style="padding-top: 50px;">
+        <div class="row align-items-center">
+            <div class="col porfolio-text" style="text-align: center" ;>
+
+                <h4><a href="#scrollspyHeadingNoteworthy">Back to Top</a></h4>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
